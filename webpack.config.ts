@@ -74,7 +74,7 @@ const webpackConfig: Configuration = {
     path: path.join(__dirname),
     filename: '[name].js',
     chunkFormat: 'module',
-    publicPath: '/',
+    publicPath: 'auto',
     library: {
       type: 'module',
     },
@@ -83,6 +83,7 @@ const webpackConfig: Configuration = {
   experiments: {
     outputModule: true,
   },
+  externalsType: 'module',
   plugins: [
     new ESLintPlugin({
       extensions: ['.ts', '.js'],
