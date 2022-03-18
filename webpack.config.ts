@@ -75,7 +75,6 @@ const webpackConfig: Configuration = {
     filename: '[name].js',
     publicPath: 'auto',
     library: {
-      name: 'Blocker',
       type: 'commonjs-module',
     },
   },
