@@ -4,7 +4,7 @@ import { ElectronBlocker, fullLists } from '@cliqz/adblocker-electron';
 import { BrowserWindow } from 'electron';
 
 // Tracking and ads blocker
-class AdBlocker {
+class Blocker {
   env: any;
 
   constructor(env: any) {
@@ -45,4 +45,4 @@ class AdBlocker {
   }
 }
 
-export default AdBlocker;
+export default Blocker;

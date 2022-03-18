@@ -73,17 +73,12 @@ const webpackConfig: Configuration = {
   output: {
     path: path.join(__dirname),
     filename: '[name].js',
-    chunkFormat: 'module',
     publicPath: 'auto',
     library: {
-      type: 'module',
+      name: 'Blocker',
+      type: 'commonjs-module',
     },
-    module: true,
   },
-  experiments: {
-    outputModule: true,
-  },
-  externalsType: 'module',
   plugins: [
     new ESLintPlugin({
       extensions: ['.ts', '.js'],
