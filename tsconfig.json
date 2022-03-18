@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "ES5",
+    "lib": [
+      "ES5",
+      "ES2015",
+      "ES2015.Promise",
+      "ScriptHost",
+      "ES2017",
+      "ES2016",
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "strict": true,
+    "typeRoots": ["@types", "node_modules/@types"],
+    "baseUrl": "./",
+  },
+  "include": [
+    "webpack.config.ts",
+    "index.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "build",
+      "**/*.spec.ts"
+  ]
+}
