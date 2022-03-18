@@ -26,7 +26,6 @@ export const babelOptions = {
 
 const webpackConfig: Configuration = {
   mode: 'production',
-  devtool: 'source-map',
   entry: {
     index: path.resolve(__dirname, 'index.ts'),
   },
@@ -37,11 +36,9 @@ const webpackConfig: Configuration = {
   target: 'node',
   optimization: {
     moduleIds: 'deterministic',
-    nodeEnv: 'production',
     splitChunks: {
       chunks: 'all',
     },
-    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -76,7 +73,15 @@ const webpackConfig: Configuration = {
   output: {
     path: path.join(__dirname),
     filename: '[name].js',
+    chunkFormat: 'module',
     publicPath: '/',
+    library: {
+      type: 'module',
+    },
+    module: true,
+  },
+  experiments: {
+    outputModule: true,
   },
   plugins: [
     new ESLintPlugin({
