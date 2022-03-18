@@ -36,8 +36,8 @@ yarn build
 
 After building and bundling the plugin, you need to do the following:
 
-- Copy the `index.js` and the `529.js` file from the project's root folder
+- Copy the `index.js`, the `runtime.js` and the `529.js` file from the project's root folder
 - Create a `plugins` folder in the `%HOME%/%CONFIG_DIR%/Cider` user data directory (the directory path may vary between different OSes)
-- Put the `index.js` and the `529.js` file in the `plugins` folder
+- Put the `index.js`, the `runtime.js` and the `529.js` file in the `plugins` folder
 - Launch Cider
 
